@@ -2,7 +2,7 @@ let connection = require("../database/connection");
 const crypto = require("crypto");
 
 //Não esquecer de por a virgula apos o termino da função
-//Pois no module.exports é necessário.
+//Pois o module.exports está exportando 2 objetos.
 module.exports = {
   async index(request, response) {
     const ongs = await connection("ongs").select("*");
