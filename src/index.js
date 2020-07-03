@@ -14,4 +14,6 @@ app.use(express.json());
 app.use(routes);
 
 //Fazendo o aplicativo "ouvir" a porta 3333
-app.listen(3333);
+app.listen(3333,(req,res)=>{
+ return console.log("servidor on") 
+});
