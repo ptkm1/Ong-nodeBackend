@@ -16,5 +16,5 @@ app.use(routes);
 //Fazendo o aplicativo "ouvir" a porta 3333
 app.listen(3333,(req,res)=>{
  console.log("servidor on") 
- return res.json({message: "nice"})
+ return res.json({"message": "nice"})
 });
